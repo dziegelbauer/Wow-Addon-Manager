@@ -9,7 +9,9 @@
     <Grid>
         <TabControl x:Name="tabControl">
             <TabItem Header="Installed Addons">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid x:Name="installedAddonGrid" Background="#FFE5E5E5">
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                </Grid>
             </TabItem>
             <TabItem Header="Get More Addons">
                 <Grid Background="#FFE5E5E5"/>
