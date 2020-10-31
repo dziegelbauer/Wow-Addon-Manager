@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoW_Addon_Manager"
+        xmlns:views="clr-namespace:WoW_Addon_Manager.View"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -11,7 +12,7 @@
             <TabItem Header="Installed Addons">
                 <Grid x:Name="installedAddonGrid" Background="#FFE5E5E5">
                     <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                    <StackPanel VerticalAlignment="Stretch" Grid.Row="1" Margin="0,40,0,0"/>
+                    <views:InstalledAddonView x:Name="InstalledAddonViewControl" VerticalAlignment="Stretch" Grid.Row="1" Margin="0,40,0,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Get More Addons">
